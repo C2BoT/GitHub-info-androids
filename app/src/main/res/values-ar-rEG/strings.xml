@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">معلومات-GitHub</string>
+
+    <string name="wait">انتطر..</string>
+    <string name="user">خطا المستخدم</string>
+
+    <string name="internet_connection">الرجاء التحقق من لتصال الانترنت الخاص بك.</string>
+    <string name="network_error">خطا في الشبكة</string>
+
+    <string name="not_connected">غير متصل</string>
+
+
+    <string name="jesus"></string> <!-- يسوع ☦️ -->
+    <string name="loves_you"></string> <!-- يحبك 💗 -->
+    <string name="enter_your_tiktok_username">ادخل اسم مستخدم GitHub</string>
+
+
+
+        <string name="name">الاسم: %s</string>
+        <string name="username">اسم المستخدم: @%s</string>
+        <string name="bio">نبذة: %s</string>
+        <string name="public_repos">المستودعات العامة: %d</string>
+        <string name="followers">المتابعون: %d</string>
+        <string name="following">متابعة: %d</string>
+        <string name="location">الموقع: %s</string>
+        <string name="blog">المدونة: %s</string>
+        <string name="twitter">تويتر: %s</string>
+        <string name="company">الشركة: %s</string>
+        <string name="image">الصورة: %s</string>
+
+
+    <string name="result_format">
+الاسم: %1$s
+\n\n
+اسم المستخدم: @%2$s
+\n\n
+نبذة: %3$s
+\n\n
+المستودعات العامة: %4$d
+\n\n
+المتابعون: %5$d
+\n\n
+متابعة: %6$d
+\n\n
+الموقع: %7$s
+\n\n
+المدونة: %8$s
+\n\n
+تويتر: %9$s
+\n\n
+الشركة: %10$s
+\n\n
+الصورة: %11$s
+</string>
+
+    <string name="location_not_available">غير متوفر</string>
+    <string name="bio_not_available">غير متوفر</string>
+    <string name="blog_not_available">غير متوفر</string>
+    <string name="twitter_not_available">غير متوفر</string>
+    <string name="company_not_available">غير متوفر</string>
+    <string name="image_not_available">غير متوفر</string>
+
+</resources>

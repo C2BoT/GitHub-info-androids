@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorxml"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idTILQuery"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/detailsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/idTILQuery"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- text view for displaying question-->
+
+            <TextView
+                android:id="@+id/idTVQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/black"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/jesus"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- text view for displaying response-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/viewimg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                app:civ_border_color="#E2946A97"
+                app:civ_border_width="4dp" />
+
+
+            <TextView
+                android:id="@+id/txtResponse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/black"
+                android:padding="4dp"
+                android:text="@string/loves_you"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!-- text field for asking question-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILQuery"
+        android:fontFamily="@font/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:hint="@string/enter_your_tiktok_username"
+        android:padding="5dp"
+        android:textColorHint="#CCFFFFFF"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:imeOptions="actionSend"
+            android:fontFamily="@font/black"
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#CCFFFFFF"
+            android:drawableRight="@drawable/ic_send"
+            android:drawableTint="@color/white"
+            android:textSize="17sp"
+            android:focusable="true"
+            android:background="@drawable/edit_text_bg"
+            android:focusableInTouchMode="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include
+        android:id="@+id/networkError"
+        android:visibility="gone"
+        layout="@layout/network_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

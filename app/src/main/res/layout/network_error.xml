@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".GifWifi">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifwifiview"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/wifi_error"/>
+
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/network_error"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/gifwifiview" />
+
+    <TextView
+        android:id="@+id/errormsgTextView"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/internet_connection"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/errorTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewimg" type="id" />
+    <item name="etQuestion" type="id" />
+    <item name="idTVQuestion" type="id" />
+    <item name="txtResponse" type="id" />
+    <item name="detailsContainer" type="id" />
+    <item name="networkError" type="id" />
+    <item name="idTILQuery" type="id" />
+</resources>
